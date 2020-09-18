@@ -1,0 +1,240 @@
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+header {
+    height: 596px;
+    background-color: #87509c;
+    position: relative;
+    overflow: hidden;
+}
+
+.logo {
+    position: absolute;
+    top: 57px;
+    left: 211px;
+    width: 118px;
+    height: 37px;
+    background-image: url(img/logo.png);
+}
+
+nav {
+    position: absolute;
+    top: 60px;
+    right: 195px;
+    width: 416px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav li a {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+    display: block;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    background-color: #643a79;
+    border-radius: 5px;
+}
+
+.title {
+    font-size: 45px;
+    line-height: 48px;
+    font-weight: 700;
+    color: #f7f3ea;
+    text-align: center;
+    width: 906px;
+    margin: 239px auto 0;
+}
+
+.button {
+    margin: 54px auto;
+    width: 293px;
+    height: 70px;
+    background-color: #eb7d4b;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.button:hover {
+    box-shadow: 2px 2px 5px black;
+    margin: 58px auto;
+}
+
+.services {
+    height: 747px;
+    background-color: #17c2a4;
+}
+
+.services .header .name {
+    text-align: center;
+    padding-top: 119px;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 40px;
+    line-height: 29px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+}
+
+.services .header .line {
+    margin: 21px 0 0 677px;
+}
+
+.services .header .defen {
+    margin: 23px 419px 0 418px;
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+}
+
+.services .line img {
+    width: 87px;
+    height: 4px;
+    opacity: 0.14;
+    background-color: #000000;
+}
+
+.services .under_name {
+    margin: 78px auto;
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.services .flag {
+    display: inline-block;
+    width: 192px;
+    text-align: center;
+}
+
+.services .flag .head {
+    padding-top: 60px;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 24px;
+    line-height: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+}
+
+.services .flag .defen {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+}
+
+.services .pencil {
+    display: inline-block;
+    width: 192px;
+    text-align: center;
+}
+
+.services .pencil .head {
+    padding-top: 60px;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 24px;
+    line-height: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+}
+
+.services .pencil .defen {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+}
+
+.services .gears {
+    display: inline-block;
+    width: 192px;
+    text-align: center;
+}
+
+.services .gears .head {
+    padding-top: 60px;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 24px;
+    line-height: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+}
+
+.services .gears .defen {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+}
+
+.services .rocket {
+    display: inline-block;
+    width: 192px;
+    text-align: center;
+}
+
+.services .rocket .head {
+    padding-top: 60px;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 24px;
+    line-height: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+}
+
+.services .rocket .defen {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+}

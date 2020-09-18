@@ -1,0 +1,339 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+.wrapper {
+    width: 70%;
+    margin: 0 auto;
+}
+
+/*
+? Заголовок
+*/
+
+.header {
+    animation: backInDown;
+    animation-duration: 1s;
+    color: white;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-content: center;
+}
+
+.title {
+    display: inline-block;
+    padding-left: 50px;
+    margin: 15px;
+    font-size: 50px;
+}
+
+span.title::first-letter {
+    background-color: white;
+    color: #1a6a6d;
+    padding: 2px 4px;
+    margin: 2px;
+    border-radius: 10px;
+}
+
+/*
+? Анимация Заголовока
+*/
+
+.title:hover {
+    animation: heart .5s infinite;
+}
+
+@keyframes heart {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    50% {
+        transform: scale(1.3, 1.3);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+/*
+? Видео в заголовке
+*/
+
+.header-video {
+    position: absolute;
+    width: 100%;
+    height: 88px;
+    object-fit: cover;
+    object-position: center center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    z-index: -1;
+}
+
+/*
+? Верхнее меню
+*/
+
+
+.header_menu {
+    font: 16pt arial;
+    margin-right: 50px;
+    align-self: center;
+}
+
+
+.header_menu a {
+    display: inline-block;
+    color: white;
+    height: 50px;
+    padding: 20px 25px 0px;
+}
+
+.header_menu li:hover a {
+    color: yellow;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu-sub-left-dop,
+.submenu
+{
+    display: inline-block;
+    background-color: burlywood;
+    padding: 5px;
+}
+
+.submenu {
+    visibility: hidden;
+    position: absolute;
+    opacity: 0;
+}
+
+.item {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+.submenu .item:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+.item:hover {
+    background-color: blue;
+    transition-duration: .5s;
+}
+
+.item a {
+    padding: 3px;
+    display: block;
+    white-space: nowrap;
+}
+
+.submenu .item {
+    width: 100%;
+}
+
+.item:hover>.submenu {
+    visibility: visible;
+    opacity: 1;
+    transition-duration: 0.5s;
+    z-index: 1;
+} 
+
+.submenu .item:hover>.submenu {
+    left: 180px;
+    top: -5px;
+}
+
+
+/*
+? Левое меню
+*/
+
+.side-left {
+    animation: backInLeft;
+    animation-duration: 1s;
+    float: left;
+    font: 16pt arial;
+    width: 220px;
+    padding: 0px;
+    margin-left: 40px;
+}
+
+.menu-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-left a {
+    display: inline-block;
+    color: #5e7a6f;
+    padding: 8px;
+    width: 204px;
+}
+
+
+.main-page {
+    animation: backInRight;
+    animation-duration: 1s;
+    border: 1px solid gray;
+    margin-left: 260px;
+    margin-right: 80px;
+}
+
+.nick-top {
+    background-color: lightgray;
+    padding: 5px;
+}
+
+.nick,
+.nick-top span,
+.main-menu-el {
+    display: inline-block;
+    font: 16pt tahoma;
+    color: black;
+    padding: 3px;
+    margin-left: 10px;
+}
+
+/*
+? Аватарка
+*/
+
+.main-left {
+    float: left;
+}
+
+.avatar {
+    width: 280px;
+    margin: 10px;
+}
+
+.main-right {
+    margin-left: 300px;
+
+}
+
+.about {
+    display: flex;
+}
+
+.about-left {
+    width: 200px;
+}
+
+.about-right {
+    color: #1a6a6d;
+    margin-right: 80px;
+}
+
+p {
+    font: 15pt arial;
+}
+
+.edit-page {
+    margin-left: 20px;
+    color: #1a6a6d;
+}
+
+.main-menu-el {
+    display: inline-block;
+    background-color: #dedede;
+    width: 97.6%;
+}
+
+.main-left>span {
+    width: 90%;
+}
+
+/*
+? Галееря
+*/
+
+.wall-video {
+    width: 595px;
+}
+
+.gallery {
+    display: flex;
+}
+
+.gallery img {
+    margin: 3px;
+}
+
+/*
+? Футер
+*/
+
+
+.footer {
+    background-color: #dedede;
+    padding: 1px;
+    text-align: center;
+    margin-bottom: 120px;
+    margin-left: 560px;
+}
+
+.copy {
+    margin-right: -2%;
+    font-size: 50px;
+}
+
+/*
+? Выпадающие меню
+*/
+
+
+.sub-left-menu {
+    display: none;
+}
+
+.menu-left li:hover .sub-left-menu {
+    display: block;
+}
+
+.header_menu {
+    margin: -50px 0 0 450px;
+    display: none;
+}
+
+.header-menu-open>li {
+    font-size: 30px;
+    margin: 30px 990px 0 0;
+}
+
+.header-menu-open li:hover .header_menu {
+    display: flex;
+}
+
+/*
+? Элементы меню
+*/
+
+.menu-item-bounce-1s:hover a {
+    animation: bounce;
+    animation-duration: 1s;
+}
+
+.menu-item-swing-1s:hover a {
+    animation: swing;
+    animation-duration: 1s;
+}
